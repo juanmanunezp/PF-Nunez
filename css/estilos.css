@@ -1,0 +1,171 @@
+/* index/Globals */
+
+.fondo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/img1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.titulo{
+    background-color: rgba(155, 155, 140, 0.669);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra {
+    background-color: rgba(155, 155, 140, 0.669);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ h1 {
+    font-family: "Solway", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fotoLogo {
+    border-radius: 50%;
+    width: 75px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10%;
+}
+
+nav ul li {
+    font-family: "Solway", serif;
+    list-style: none;
+    padding-block: 6px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: beige;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    font-size: 18px;
+    color: rgb(83, 215, 60);
+}
+
+.imgPaisanada { 
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(5px) brightness(0.8);
+
+}
+
+.ImgPaisanada img {
+    border-radius: 50%;
+    border: 8px solid rgb(157, 157, 140)
+}
+
+footer {
+    display: flex;  
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.inicioBtn {
+    position: sticky;
+    display: flex;
+    justify-content: left;
+    margin-left: 40px;
+
+}
+
+.inicioBtn a {
+    text-decoration: none;
+    color: beige;
+    font-family: "Solway", serif;
+}
+
+footer ul li {
+    list-style: none;
+    float: left;
+}
+
+footer ul li a { 
+    padding: 36px;
+    color: beige;
+}
+footer ul li a :hover{
+    color: greenyellow !important;
+}
+
+
+/* Contactanos */
+
+form {
+    background-color: beige;
+    width: 30%;
+    border: 2px solid rgb(33, 33, 33);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px;
+    position: relative;
+    left: 27%;
+}
+
+
+input {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* sobre nosotros */
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video iframe {
+    margin: 100px;
+    border-radius: 30px;
+    border: 8px solid beige;
+}
+
+.divCarousel {
+    width: 35%;
+    min-width: 180px;
+    display: flex;
+    margin-left: 35%;
+}
+
+.divCarousel img {
+    border-radius: 20px;
+    min-height: 300px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 200px;
+    margin-left: 20px;
+
+}
+
+
+.grid-container .grid-item2 {
+    border: solid 2px;
+    padding: 4px;
+    align-self: flex-end;
+}
