@@ -57,7 +57,7 @@ nav ul li a {
 
 nav ul li a:hover {
     font-size: 18px;
-    color: rgb(83, 215, 60);
+    color: rgb(54, 28, 28);
 }
 
 .imgPaisanada { 
@@ -104,7 +104,7 @@ footer ul li a {
     color: beige;
 }
 footer ul li a :hover{
-    color: greenyellow !important;
+    color: rgb(54, 28, 28);
 }
 
 
@@ -141,7 +141,7 @@ input {
 .video iframe {
     margin: 100px;
     border-radius: 30px;
-    border: 8px solid beige;
+    border: 8px solid rgba(15, 15, 1, 0.394);
 }
 
 .divCarousel {
@@ -178,4 +178,48 @@ input {
     padding: 20px;
     letter-spacing: 1px;
     border-radius: 10px;
+}
+
+.textoTienda {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  background-color: rgba(104, 107, 106, 0.185);
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 8px;
+  margin-top: 75px;
+}
+
+.caballo {
+    position: absolute;
+    width: 5%;
+    left: 55%;
+    bottom: 83%;
+    filter: brightness(20);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: 100px auto;
+    margin-top: 100px;
+    background-color: rgba(104, 107, 106, 0.185);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.grid img {
+    width: 100%;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 9px;
+    transition: 0.2s;
+    margin: 10%;
+}
+
+.grid img:hover {
+    transform: scale(1.15);
 }
