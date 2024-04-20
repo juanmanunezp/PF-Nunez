@@ -119,6 +119,8 @@ form {
     margin: 100px;
     position: relative;
     left: 27%;
+    display: grid;
+    gap: 10px;
 }
 
 
@@ -157,15 +159,23 @@ input {
 
 .grid-container{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 200px;
-    margin-left: 20px;
-
+    grid-template-columns: 1fr 1fr ;
+    margin: 20px;
+    
 }
 
 
-.grid-container .grid-item2 {
+.grid-container .grid-item2  img {
     border: solid 2px;
     padding: 4px;
     align-self: flex-end;
+    border-radius: 5px;
+}
+
+.grid-container .grid-item p {
+    margin: 30px;
+    background-color: rgba(240, 248, 255, 0.62);
+    padding: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
 }
