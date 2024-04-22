@@ -30,8 +30,12 @@
 
  h1 {
     font-family: "Solway", serif;
-    font-weight: 400;
+    font-weight: 40vw;
     font-style: normal;
+}
+h2 {
+    font-family:"Solway", serif;
+    font-weight: 20vh;
 }
 
 .fotoLogo {
@@ -47,6 +51,7 @@ nav ul li {
     font-family: "Solway", serif;
     list-style: none;
     padding-block: 6px;
+    margin-top: 5px;
 }
 
 nav ul li a {
@@ -60,25 +65,28 @@ nav ul li a:hover {
     color: rgb(54, 28, 28);
 }
 
-.imgPaisanada { 
-    display: flex;
+.contenedorIndex {
+    display: flex; 
     justify-content: center;
-    margin: 40px;
-    border-radius: 50%;
+    align-items: center;
+}
+.imgPaisanada { 
     filter: blur(5px) brightness(0.8);
-
 }
 
 .ImgPaisanada img {
+    max-width: 100px;
+    height: auto;
     border-radius: 50%;
     border: 8px solid rgb(157, 157, 140)
-}
+} 
 
-footer {
-    display: flex;  
-    justify-content: center;
-    margin-top: 300px;
-}
+  h4 {
+    position: absolute;
+    left: 50%;  
+    top: 45%;
+    color: rgb(22, 41, 58);
+} 
 
 .inicioBtn {
     position: sticky;
@@ -94,14 +102,25 @@ footer {
     font-family: "Solway", serif;
 }
 
+footer {
+    display: flex;  
+    justify-content: center;
+    margin-top: 300px;
+}
+
 footer ul li {
     list-style: none;
     float: left;
+    position: relative;
 }
 
 footer ul li a { 
-    padding: 36px;
+    padding: 3vw;
     color: beige;
+    font-size: 70%;
+    display: block;
+    margin: 0 auto;
+
 }
 footer ul li a :hover{
     color: rgb(54, 28, 28);
@@ -112,13 +131,12 @@ footer ul li a :hover{
 
 form {
     background-color: beige;
-    width: 30%;
+    width: 40%;
+    min-width: 150px;
     border: 2px solid rgb(33, 33, 33);
     border-radius: 10px;
     padding: 20px;
-    margin: 100px;
-    position: relative;
-    left: 27%;
+    margin: 100px auto;
     display: grid;
     gap: 10px;
 }
@@ -126,12 +144,10 @@ form {
 
 input {
     display: block;
-    padding: 10px;
-    margin: 10px;
+    padding: 3%;
+    margin: 3% auto;
+    width: 80%; 
 }
-
-
-/* sobre nosotros */
 
 .video {
     display: flex;
@@ -144,32 +160,29 @@ input {
     border: 8px solid rgba(15, 15, 1, 0.394);
 }
 
-.divCarousel {
-    width: 35%;
-    min-width: 180px;
-    display: flex;
-    margin-left: 35%;
-}
-
-.divCarousel img {
-    border-radius: 20px;
-    min-height: 300px;
-}
+/* sobre nosotros */
 
 
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    margin: 20px;
-    
+    margin: 2%;
+    padding: 2%;
 }
-
+  
+@media screen and (max-width: 860px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .grid-container .grid-item2  img {
     border: solid 2px;
     padding: 4px;
     align-self: flex-end;
     border-radius: 5px;
+    margin: 33px;
+    width: 80%;
 }
 
 .grid-container .grid-item p {
@@ -204,16 +217,18 @@ input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1100px;
-    margin: 100px auto;
+    margin: 20px auto;
     margin-top: 100px;
     background-color: rgba(104, 107, 106, 0.185);
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
+    gap: 20px;
 }
 
 .grid img {
-    width: 100%;
+    max-width: 100%;
     width: 300px;
+    height: auto;
     margin: 0 auto;
     border-radius: 9px;
     transition: 0.2s;
@@ -222,4 +237,34 @@ input {
 
 .grid img:hover {
     transform: scale(1.15);
+}
+
+.productosCards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2%;
+    margin-top: 40px;
+    gap: 8% 0;
+    
+
+}
+
+@media screen and (max-width: 860px) {
+    .productosCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.productosCards .carta {
+    display: block;
+    margin: 0 auto;
+    width: 20vw; 
+    min-width: 130px;
+}
+
+.productosCards p {
+    font-size: 80%;
+    display: block;
+    align-items: center;
 }
