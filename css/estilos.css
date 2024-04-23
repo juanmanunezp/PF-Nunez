@@ -71,13 +71,6 @@ nav ul li a:hover {
     align-items: center;
 }
 
-  h4 {
-    position: absolute;
-    left: 50%;  
-    top: 45%;
-    color: rgb(22, 41, 58);
-} 
-
 .inicioBtn {
     position: sticky;
     display: flex;
