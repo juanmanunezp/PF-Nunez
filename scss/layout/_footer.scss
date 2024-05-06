@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    justify-content: center;
+    // margin-top: 300px;
+    margin-block: 1%;
+    background-color: rgba(0, 0, 0, 0.113);
+  
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        float: left;
+        position: relative;
+  
+            a {
+                padding: 3vw;
+                color: beige;
+                font-size: 70%;
+                display: block;
+                margin: 0 auto;
+  
+                &:hover {
+                    color: rgb(54, 28, 28);
+                }
+            }
+        }
+    }
+  
