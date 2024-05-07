@@ -10,6 +10,20 @@
   left: 0;
 }
 
+.texts {
+  display: flex;
+  justify-content: center;
+  margin-inline: 6%;
+  background-color: rgba(231, 222, 222, 0.484);
+  padding: 2%;
+}
+.texts p {
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Solway", serif;
+  color: rgba(0, 0, 0, 0.906);
+}
+
 .titulo,
 .barra {
   background-color: rgba(0, 0, 0, 0.113);
@@ -92,7 +106,8 @@ h2 {
 /* Contactanos */
 form {
   background-color: rgba(0, 0, 0, 0.113);
-  width: 40%;
+  width: 80%;
+  max-width: 500px;
   min-width: 150px;
   border: 2px solid rgb(33, 33, 33);
   border-radius: 10px;
@@ -141,14 +156,7 @@ input {
 /* sobre nosotros */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2%;
-  padding: 2%;
-}
-@media screen and (max-width: 860px) {
-  .grid-container .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  justify-content: center;
 }
 .grid-container .grid-item p {
   margin: 30px;
@@ -157,13 +165,14 @@ input {
   letter-spacing: 1px;
   border-radius: 10px;
 }
-.grid-container .grid-item2 img {
+.grid-container .grid-item img {
   border: solid 2px;
   padding: 4px;
-  align-self: flex-end;
   border-radius: 5px;
   margin: 33px;
-  width: 80%;
+  width: 40%;
+  display: block;
+  margin: 0 auto 15vh auto;
 }
 
 .textoTienda {
@@ -187,6 +196,11 @@ input {
   border-radius: 10px;
   padding: 10px;
   gap: 20px;
+}
+@media screen and (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .grid .grid-item h2 {
   margin: 30px 30px 0 30px;
@@ -214,13 +228,14 @@ input {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  margin: 2%;
-  margin-top: 40px;
+  margin: 5% 3% 20vh 3%;
   gap: 8% 0;
 }
 @media screen and (max-width: 860px) {
   .productosCards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4% 0;
+    margin-bottom: 30vh;
   }
 }
 .productosCards .carta {
@@ -228,6 +243,11 @@ input {
   margin: 0 auto;
   width: 20vw;
   min-width: 130px;
+}
+@media screen and (max-width: 860px) {
+  .productosCards .carta {
+    width: 70%;
+  }
 }
 .productosCards p {
   font-size: 80%;

@@ -9,3 +9,17 @@
     top: 0;
     left: 0;
   }
+
+  .texts {
+    display: flex;
+    justify-content: center;
+    margin-inline: 6%;
+    background-color: rgba(231, 222, 222, 0.484);
+    padding: 2%;
+    p {
+      letter-spacing: 1px;  
+      font-weight: 500;
+      font-family: $fuente;
+      color: rgba(0, 0, 0, 0.906);
+    }
+  }
