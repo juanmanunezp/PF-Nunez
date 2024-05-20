@@ -13,13 +13,14 @@
   .texts {
     display: flex;
     justify-content: center;
-    margin-inline: 6%;
-    background-color: rgba(231, 222, 222, 0.484);
-    padding: 2%;
+    margin-inline: 3%;
+    background-color: $colorFondo;
+    padding: 1%;
     p {
       letter-spacing: 1px;  
-      font-weight: 500;
+      font-weight: 400;
       font-family: $fuente;
-      color: rgba(0, 0, 0, 0.906);
+      color: $colorTextoClaro ;
+      text-shadow: 2px 2px 3px beige;
     }
   }
