@@ -2,17 +2,19 @@
 display: grid;
 justify-content: center;
     @media screen and (max-width: 860px) {
-        .grid {}
+        
     }
 }
 
 @mixin gridSobreNosotrosItem {
     p {
-        margin: 30px;
+        font-size: 19px;
+        margin: 30px 10%;
         background-color: $colorFondo;
         padding: 20px;
         letter-spacing: 1px;
-        border-radius: 10px;
+        color: white;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
 
     img {

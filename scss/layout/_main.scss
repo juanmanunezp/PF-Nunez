@@ -2,8 +2,11 @@ h2 {
     font-family: $fuente;
     font-weight: 20vh;
     text-align: center;
-    padding-top: 12%;
-    text-shadow: 3px 3px 4px white;
+    background-color: $colorFondo;
+    color: white;
+    margin-top: 60px;
+    padding: 15px;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
   }
   
   .contenedorIndex {
@@ -29,8 +32,9 @@ h2 {
   }
 
   label {
-    color: rgb(39, 54, 39);
+    color: white;
     font-weight: bold;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   
   input {
@@ -75,11 +79,10 @@ h2 {
         } 
     }
   
-  
   .textoTienda {
     display: flex;
     justify-content: center;
-    color: $colorTexto;
+    color: white;
     background-color: $colorFondo;
     font-family: $fuente;
     letter-spacing: 6px;
@@ -97,7 +100,7 @@ h2 {
     padding: 10px;
     gap: 20px;
         @media screen and (max-width:$mediaScreenMaxSize ) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
     }
     
   
@@ -113,7 +116,7 @@ h2 {
   
     img {
         max-width: 100%;
-        width: 300px;
+        width: 86%;
         height: auto;
         margin: 0 auto;
         border-radius: 9px;
@@ -146,6 +149,16 @@ h2 {
         min-width: 130px;
         @media screen and (max-width: 860px) {
             width: 70%;
+        }
+        .btn-comprar {
+          border: 0;
+          background-color: rgba(0, 0, 0, 0.625);
+          border-radius: 5px;
+          color: white;
+          display: block;
+          margin: 0 auto;
+          padding: 8px 30%;
+          margin-top: 8px;
         }
     }
   

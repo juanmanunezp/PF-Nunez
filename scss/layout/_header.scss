@@ -1,8 +1,7 @@
 .titulo,
 .barra {
-  background-color: $colorFondo;
   padding: 5px;
-  margin: 2px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,10 +25,12 @@
   nav {
     margin: 1% 0 4% 0;
     ul {
+        padding: 3px;
         gap: 3vw;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        background-color: $colorFondo;
 
         li {
             font-family: $fuente;
@@ -41,10 +42,11 @@
                 text-decoration: none;
                 color: $colorTexto;
                 transition: 0.2s;
+                color: white;
   
                 &:hover {
                     font-size: 18px;
-                    color: #2d2d2764;
+                    color: #ffffffc0;
                 }
             }
         }
