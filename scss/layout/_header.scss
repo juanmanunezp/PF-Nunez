@@ -2,6 +2,7 @@
 .barra {
   background-color: $colorFondo;
   padding: 5px;
+  margin: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +17,7 @@
     margin-right: 10%;
   }
 
-  h1 {
+  .textoTitulo {
     font-family: $fuente;
     font-weight: 40vw;
     font-style: normal;

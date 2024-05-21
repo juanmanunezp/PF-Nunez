@@ -80,8 +80,7 @@ h2 {
     display: flex;
     justify-content: center;
     color: $colorTexto;
-    background-color: rgba(215, 216, 215, 0.759);
-    padding: 6px;
+    background-color: $colorFondo;
     font-family: $fuente;
     letter-spacing: 6px;
     margin-top: 75px;
@@ -93,7 +92,7 @@ h2 {
     max-width: 1100px;
     margin: 20px auto;
     margin-top: 100px;
-    background-color: rgba(104, 107, 106, 0.185);
+    background-color: $colorFondo;
     border-radius: 10px;
     padding: 10px;
     gap: 20px;
