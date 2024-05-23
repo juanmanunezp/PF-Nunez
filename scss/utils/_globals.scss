@@ -9,19 +9,21 @@
     top: 0;
     left: 0;
     object-fit: cover;
+    opacity: 0.9;
+    filter: brightness(0.5);
   }
 
   .texts {
     display: flex;
     justify-content: center;
-    margin-inline: 3%;
+    margin-inline: 4%;
     background-color: $colorFondo;
     padding: 1%;
     p {
       letter-spacing: 1px;  
       font-weight: 400;
       font-family: $fuente;
-      padding: 5px;
+      padding: 6px;
       color: white ;
       text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
